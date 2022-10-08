@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:background="@color/text_gray"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:id="@+id/full_screen_iv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/spaker_full_screen"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

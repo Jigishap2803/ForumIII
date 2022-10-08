@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SpeakerDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_rectangle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/back_icon"
+                    android:backgroundTint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:text="Speakers Details"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/speaker_details_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="15dp"
+            android:elevation="100dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/speaker_image_iv"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/speaker_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/speaker_designation_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray"
+                            android:text=""
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/speaker_organization_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_gray"
+                            android:text=""
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/speaker_details_card_view">
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:weightSum="4"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:layout_margin="15dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/linkdin_icon_iv"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="30dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:src="@drawable/linkdin_icon" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/twitter_icon_iv"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="30dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:src="@drawable/twitter_icon" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/fb_icon_iv"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="30dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:src="@drawable/fb_icon" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/web_icon_iv"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="30dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:src="@drawable/web" />-->
+
+            <!--            </LinearLayout>-->
+
+            <!-- <androidx.cardview.widget.CardView
+                 android:id="@+id/speaker_details_cv"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:elevation="100dp"
+                 app:cardCornerRadius="20dp">
+
+                 <TextView
+                     android:id="@+id/speaker_desc_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="#8A8A8A"
+                     android:text=""
+                     android:textSize="15sp"
+                     android:padding="5dp"
+                     android:layout_margin="10dp"/>
+
+             </androidx.cardview.widget.CardView>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:text="Sessions"
+                android:textSize="23sp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/event_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:text="Featured Videos"
+                android:textSize="23sp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/featured_video_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

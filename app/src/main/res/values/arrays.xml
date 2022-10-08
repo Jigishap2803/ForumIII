@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>My Profile</item>
+        <item>Log out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/event_icon</item>
+        <item>@drawable/profile_icon</item>
+        <item>@drawable/setting_icon</item>
+    </array>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BlogListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_icon"
+            android:backgroundTint="#168B49"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Blogs"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/lg_2"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+    <!--<LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:padding="10dp"
+      android:background="@drawable/green_border_background">
+
+      <ImageView
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:src="@drawable/search_icon"
+          android:layout_gravity="center_vertical"
+          android:padding="5dp"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Search: Topic, Catagory"
+          android:background="@null"
+          android:textSize="15sp"
+          android:textColorHint="#168B49"
+          android:textColor="#168B49"
+          android:padding="5dp"
+          android:fontFamily="@font/gordita_regular"/>
+
+  </LinearLayout>-->
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/blog_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="20dp">
+
+
+        <ImageView
+            android:id="@+id/sponsor_desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coming_soon" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

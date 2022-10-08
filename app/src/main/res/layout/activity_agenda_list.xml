@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AgendaListAct">
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/back_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/forum_blue"
+            android:text="Agenda"
+            android:textSize="23sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/title_rl"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You’ll hear from the best minds in the industry about the most important challenges and opportunities facing the whole steel supply chain, now and in the years to come."
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/text_gray"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/agenda_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_ll"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/filled_btn_background"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/download_arrow"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/download_agenda_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:text="Download Agenda"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/green_button_rounded_background"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:layout_marginRight="25dp"-->
+    <!--        android:layout_marginLeft="25dp"-->
+    <!--        >-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/download_icon_iv"-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="25dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:background="@drawable/download_icon"/>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/agenda_btn_tv"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Download Agenda"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            android:padding="15dp"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:layout_toRightOf="@id/download_icon_iv"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="15sp"/>-->
+
+    <!--    </RelativeLayout>-->
+
+
+</RelativeLayout>

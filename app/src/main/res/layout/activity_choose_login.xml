@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/forum_bg"
+    tools:context=".Activity.ChooseLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/choose_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:textColor="#168B49"
+            android:textSize="15sp"
+            android:background="@drawable/btn_background"
+            />
+
+        <TextView
+            android:id="@+id/register_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:textColor="#168B49"
+            android:textSize="15sp"
+            android:background="@drawable/btn_background"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        android:elevation="5dp"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@color/white">-->
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_content_cv"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/food_content_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:elevation="5dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/lg_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/view_rounded"/>
+
+            <TextView
+                android:id="@+id/food_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="Sunday - 30th October 2022"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/expandable_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+                <LinearLayout
+                    android:id="@+id/desc_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/food_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="12:30 pm - "
+                            android:textColor="@color/text_gray"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/menu_category_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Lunch"
+                            android:textColor="@color/text_gray"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/lg_1" />
+
+                    <TextView
+                        android:id="@+id/food_desc_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="A three course buffet lunch at the hotel’s famous Capriccio Grill"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/lg_1" />
+
+                </LinearLayout>
+
+<!--            </RelativeLayout>-->
+        </LinearLayout>
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+    </LinearLayout>
+</LinearLayout>
